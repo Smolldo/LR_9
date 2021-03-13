@@ -1,0 +1,27 @@
+body{
+    background-color: #eee;
+}
+
+.first_block{
+    width: 50%;
+    height: 50%;
+
+    border: 2px solid black;
+
+    box-shadow: 4px 4px 8px black;
+    background-color: white;
+
+    margin: 200px auto;
+}
+
+h2, h3, p {
+    text-align: center;
+
+    font-weight: 700;
+}
+
+.task_item{
+    list-style: square;
+}
+
+
