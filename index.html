@@ -17,15 +17,39 @@
             <ul class="task">
                 <li class="task_item">	x += y - x++ * z ;</li>
                 <li class="task_item">	z = x++ + y * 5 ;</li>
-                <li class="task_item">x = y - x++ * z. </li>
+                <li class="task_item">y = y - x++ * z. </li>
             </ul>
-            <br/>
-            
+            <hr/>
+            <h4>Введіть знначення N:</h4>
             <input type="text" class="first_input">
             <button class="btn" type="button">Ввести</button>
             <h3>Результат: </h3>
-            <p>x = <span>;</span></p>
-            <script src="./script/script.js"></script>
+            <p class="result">x = <span class="ox"></span><span class="dot">;</span></p>
+            <p class="result">z = <span class="oz"></span><span class="dot">;</span></p>
+            <p class="result">y = <span class="oy"></span><span class="dot">;</span></p>
+            
     </div>
+    <div class="second_block">
+        <h2>Варіант 7</h2>
+        <p>Об’єм V циліндра радіусом r=2*N та висотою h=N+4, розраховується за формулою V=πr2h.
+            Знайти об'єм циліндру.
+        </p>
+        <table class="table">
+            <tr>
+                <td><img src="./images/cyl.png" alt="cylinder" class="cyl"/>
+                    </td>
+            
+                <td>
+                    <p class="form">V = 2пrh.</p>
+                    <h4>Введіть знначення N:</h4>
+                    <input type="text" class="second_input">
+                    <button type="button" class="btn_two">Ввести</button>
+                    <p class="result">V = <span class="res"></span><span class="dot">;</span></p>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+    <script src="./script/script.js"></script>
 </body>
 </html>

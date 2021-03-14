@@ -11,7 +11,7 @@ body{
     box-shadow: 4px 4px 8px black;
     background-color: white;
 
-    margin: 200px auto;
+    margin: 5% auto;
 }
 
 h2, h3, p {
@@ -20,8 +20,47 @@ h2, h3, p {
     font-weight: 700;
 }
 
+h4{
+    margin: 0;
+    margin-left: 3%;
+}
+
 .task_item{
     list-style: square;
 }
 
+.first_input, .second_input{
+    margin-left: 3%;
+}
 
+.result{
+    text-align: left;
+    margin-left: 3%;
+}
+/*SECOND Block*/
+
+.second_block{
+    width: 50%;
+    height: 50%;
+
+    border: 2px solid black;
+
+    box-shadow: 4px 4px 8px black;
+    background-color: white;
+
+    margin: 5% auto;
+}
+
+.cyl{
+    margin-left: 2%;
+}
+
+.table{
+    border: 1px solid black;
+    width: 100%;
+
+}
+.form{
+    text-align: left;
+    margin-left: 3%;
+}
