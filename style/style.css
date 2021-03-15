@@ -25,13 +25,31 @@ h4{
     margin-left: 3%;
 }
 
+.cmetrs, .cmetrs2, .cmetrs3{
+    visibility: hidden;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #2159e3;
+    transition: .2s linear;
+}
+
 .task_item{
     list-style: square;
 }
 
 input{
     margin-left: 3%;
+
 }
+
+input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        
+    }
+
 
 .result{
     text-align: left;

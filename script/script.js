@@ -1,4 +1,4 @@
-//alert("Гоник Михайло Іванович Варіант 3")
+//alert("Гоник Михайло Іванович Варіант 1-25")
 
 
 document.querySelector('.btn').onclick = myClick;
@@ -25,6 +25,11 @@ document.querySelector('.btn_two').onclick = mathematica;
 
 function mathematica(){
     let N = document.querySelector('.second_input').value;
+    
+    if(N < 0){
+        document.querySelector('.res').innerHTML = "Tne 'N' is less than 0.";
+    }
+    else{ 
 
     let r = 2*N, h, V, p = Math.PI;
     h =  Number(N) + 4;
@@ -33,13 +38,14 @@ function mathematica(){
     V = p * r * 2 * h;
 
     if(V >= 0){
-        document.querySelector('.res').innerHTML = Math.round(V);
+        document.querySelector('.res').innerHTML = Math.round(V) +
+        document.querySelector('.cmetrs3').innerHTML ;
     }
     else{
         document.querySelector('.res').innerHTML = "Wrong action";
     }
 
-
+}
 }
 
 document.querySelector('.btn_three').onclick = myFunc;
@@ -47,16 +53,21 @@ document.querySelector('.btn_three').onclick = myFunc;
 function myFunc(){
     let r = document.querySelector('.third_input').value;
     let h = document.querySelector('.fourth_input').value;
-
+    if(r < 0 || h < 0){
+        document.querySelector('.res1').innerHTML = "The 'r' or 'h' are less than 0.";
+    }
+    else{
     let p = Math.PI, S;
 
     S = 2 * p * Number(r) * (Number(r + h));
 
     if(S >= 0){
-        document.querySelector('.res1').innerHTML = Math.round(S);
+        document.querySelector('.res1').innerHTML = Math.round(S) +
+        document.querySelector('.cmetrs2').innerHTML;
     }
     else{
         document.querySelector('.res1').innerHTML = "Wrong action";
+    }
     }
 }
 
@@ -67,23 +78,29 @@ function allMost(){
 
     let r = Number(N) - 6, l, S, p = Math.PI;
 
+    if(N < 0){
+        document.querySelector('.resultat', '.resultat1').innerHTML = "The 'N' is less than 0."
+    }
+    else{
     l = 2 * p * r;
 
     S = p * Math.pow(r , 2);
 
     if(l >= 0){
-    document.querySelector('.resultat').innerHTML = Math.round(l);
+    document.querySelector('.resultat').innerHTML = Math.round(l) +
+    document.querySelector('.cmetrs').innerHTML;
     }
     else{
     document.querySelector('.resultat').innerHTML = "Wrong Action";
     }
 
     if (S >= 0) {
-        document.querySelector('.resultat1').innerHTML = Math.round(S);
+        document.querySelector('.resultat1').innerHTML = Math.round(S) +
+        document.querySelector('.cmetrs2').innerHTML;
     } else {
         document.querySelector('.resultat1').innerHTML = "Wrong Action";
     }
-
+}
 }
 
 document.querySelector('.btn_five').onclick = tasks;
