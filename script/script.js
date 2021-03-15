@@ -1,4 +1,4 @@
-//alert("Гоник Михайло Іванович Варіант 1-25")
+alert("Гоник Михайло Іванович Варіант 1-25")
 
 
 document.querySelector('.btn').onclick = myClick;
@@ -21,7 +21,7 @@ function myClick(){
     document.querySelector('.oy').innerHTML = y;
 }
 
-document.querySelector('.btn_two').onclick = mathematica;
+        document.querySelector('.btn_two').onclick = mathematica;
 
 function mathematica(){
     let N = document.querySelector('.second_input').value;
