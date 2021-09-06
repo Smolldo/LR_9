@@ -125,3 +125,5 @@ document.querySelector('.divide').innerHTML = Math.round(divide);
 document.querySelector('.pow').innerHTML = Math.round(pover);
 document.querySelector('.module').innerHTML = Math.round(module);
 }
+
+
